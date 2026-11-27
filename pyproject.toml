@@ -1,13 +1,14 @@
 [project]
 name = "agent-lab"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.2.0"
+description = "A hands-on lab for building LLM agents with FastAPI and OpenAI."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.162.0",
     "openai>=3.41.0",
     "pydantic>=2.14.2",
+    "uvicorn>=0.40",
 ]
 
 [project.scripts]
@@ -23,6 +24,7 @@ build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
+    "httpx>=0.29.0",
     "pytest>=9.2.0",
     "ruff>=0.17.6",
 ]

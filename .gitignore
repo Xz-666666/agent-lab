@@ -13,3 +13,7 @@ wheels/
 .env
 .env.*
 !.env.example
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
